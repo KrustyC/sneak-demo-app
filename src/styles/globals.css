@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* img.hero-nft {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+} */
+
+.hero-nft {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: grey;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s, opacity 0.5s;
+  will-change: transform;
+  border: 10px solid white;
+  cursor: grab;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.hero-nft:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+.hero-nft > div {
+  will-change: transform;
+  height: 100%;
+  margin: 0vw 0;
+}
+
+.hero-nft > div > * {
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  margin: 0vw 0;
+}
+
+.loader {
+  border-top-color: #d53369;
+}
+
+button {
+  @apply cursor-pointer disabled:cursor-not-allowed;
+}
